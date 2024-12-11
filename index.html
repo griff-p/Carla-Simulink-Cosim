@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARLA-MATLAB Cosimulation Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cosimulation Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#guide">Step-by-Step Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#examples">Examples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#results">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <section id="intro">
+            <h1>Introduction</h1>
+            <p>Welcome to the CARLA-MATLAB Cosimulation Guide. This guide provides a structured methodology for integrating CARLA’s sensor simulations with MATLAB/Simulink’s control systems. Learn how to create a robust closed-loop simulation environment.</p>
+        </section>
+
+        <hr>
+
+        <section id="guide">
+            <h2>Step-by-Step Guide</h2>
+            <ol>
+                <li><strong>Prerequisites:</strong> Install CARLA, ROS, and MATLAB/Simulink.</li>
+                <li><strong>Setup Communication:</strong> Use CARLA’s Python API to publish sensor data to ROS topics.</li>
+                <li><strong>Integrate Simulink:</strong> Use ROS Subscribe blocks to receive sensor data and ROS Publish blocks to send control commands.</li>
+                <li><strong>Validate:</strong> Test the setup with sample scenarios and refine as needed.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Here are some practical examples:</p>
+            <ul>
+                <li><a href="#">Setting up a Lane-Keeping Controller</a></li>
+                <li><a href="#">Processing LiDAR Data in Simulink</a></li>
+                <li><a href="#">Real-Time Vehicle Control</a></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="results">
+            <h2>Results</h2>
+            <p>See the outcomes of a successful integration:</p>
+            <ul>
+                <li>Latency metrics for real-time synchronization</li>
+                <li>Graphs showing control response times</li>
+                <li>Video demonstrations of closed-loop scenarios</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>Download helpful tools and access related documentation:</p>
+            <ul>
+                <li><a href="https://carla.org/">CARLA Documentation</a></li>
+                <li><a href="https://www.mathworks.com/products/simulink.html">MATLAB/Simulink</a></li>
+                <li><a href="https://www.ros.org/">ROS</a></li>
+            </ul>
+        </section>
+
+        <footer class="mt-4">
+            <p class="text-center">&copy; 2024 CARLA-MATLAB Cosimulation Guide. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
